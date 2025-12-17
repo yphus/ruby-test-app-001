@@ -1,5 +1,6 @@
 ARG RUBY_VERSION=3.4.7
-FROM ruby:$RUBY_VERSION-slim as base
+# FROM ruby:$RUBY_VERSION-slim as base
+FROM registry.docker.com/library/ruby:$RUBY_VERSION-slim AS base
 
 # Rack app lives here
 WORKDIR /app
